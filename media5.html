@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <style>
+        body {
+        display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  font-family: sans-serif;
+	  line-height: 0.8;
+	  min-height: 100vh;
+	  background: #f3f3f3;
+	  flex-direction: column;
+	  margin: 5px;
+    }
+
+    .main {
+	  background-color: #fff;
+	  border-radius: 20px;
+	  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	  padding: 10px 25px;
+	  transition: transform 0.2s;
+	  width: 600px;
+	  text-align: center;
+    }
+
+    h1 {
+	    color: #4CAF50;
+        font-size: 50px;
+    }
+    h2 {
+	    color: #4CAF50;
+    }
+
+    label {
+	    display: block;
+	    width: 100%;
+	    margin-top: 10px;
+	    margin-bottom: 5px;
+	    text-align: left;
+	    color: #555;
+	    font-weight: bold;  
+      }
+
+
+    input {
+	    display: block;
+	    width: 100%;
+	    margin-bottom: 15px;
+	    padding: 10px;
+	    box-sizing: border-box;
+	    border: 1px solid #ddd;
+	    border-radius: 5px;
+      }
+
+    button {
+	    padding: 15px;
+	    border-radius: 10px;
+	    margin-top: 15px;
+	    margin-bottom: 15px;
+	    border: none;
+	    color: white;
+	    cursor: pointer;
+	    background-color: #4CAF50;
+	    width: 100%;
+	    font-size: 16px;
+      }
+      .cancelbtn {
+        padding: 14px 20px;
+        background-color: #f44336;
+        }
+        .cancelbtn, .signupbtn {
+        float: left;
+        width: 50%;
+        }
+
+    .wrap {
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+    }
+    .wrap2 {
+        display:flexbox;
+        margin: 10px;
+
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form action="./media1.html">
+
+                <h1>Sign-up</h1>
+                <h2>Nitesh Academy</h2>
+                <p>please fill in this form to create an account .</p>
+                <hr>
+                    <label for="First name"><b>First Name :</b></label>
+                    <input type="text" placeholder="Enter First Name" name="fname" required>
+        
+                    <label for="Last name"><b>Last Name :</b></label>
+                    <input type="text" placeholder="Enter Last Name" name="fname" required>
+    
+                    <label for="email"><b>EMAIL :</b></label>
+                <input type="text" placeholder="Enter Enail" name="email" required min="8">
+        
+                <label for="psw"><b>PASSWORD :</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required min="8">
+        
+                <label for="re-psw"><b>CONFIRM PASSWORD :</b></label>
+                <input type="password" placeholder="Enter Password" name="Confirm Password" required min="8">
+
+                    <label for="Date of birth"><b>Date Of Birth :</b></label>
+                <input type="date" placeholder="Enter Date Of Birth" name="Date Of Birth" required min="1" max="150">
+        
+                <h2>Select gender</h2>
+                    <div class="wrap"> 
+                        <input type="radio" id="male" name="gender" value="MALE">
+                        <label for="male">Male</label>
+        
+                        <input type="radio" id="female" name="gender" value="FEMALE">
+                        <label for="female">Female</label>
+        
+                        <input type="radio" id="others" name="gender" value="OTHERS">
+                        <label for="others">Others</label>
+        
+                    </div>
+                        
+                    <div class="wrap2">
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+                    
+
+                    <div>
+                        <button type="button" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign up</button>
+                    </div>
+                <p>Already registerd ?
+                    <a href="./media6.html" style="text-decoration: none;">Sign-in</a>
+                </p>
+        
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
